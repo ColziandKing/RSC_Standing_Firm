@@ -16,7 +16,7 @@ size: 2048, 2048
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
-UnitIcons/Mga Katipunero
+UnitIcons/KKKatipunero
   rotate: false
   xy: 900, 300
   size: 100, 100
