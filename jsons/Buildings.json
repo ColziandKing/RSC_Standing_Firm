@@ -2,7 +2,7 @@
   { 
 		"name": "Palengke (PA)",
 		"replaces": "Market",
-		"uniqueTo": "Philipinas",
+		"uniqueTo": "Pilipinas",
 		"gold": 2,
 		"specialistSlots": {"Merchant": 1},
 		"hurryCostModifier": 23,
@@ -23,7 +23,7 @@
 	},
 	{
 	    "name": "Coral Church",
-	    "uniqueTo": "Philipinas",
+	    "uniqueTo": "Pilipinas",
 		"replaces": "Harbor",
 		"cost": 120,
 		"maintenance": 2,
