@@ -507,5 +507,20 @@
 					"Generated near City States with weight [15]",
 					"Doesn't generate naturally <in [{Forest} {Hill}] tiles>",
 					"Doesn't generate naturally <in [{Tundra} {Forest}] tiles>"]
+	},
+	{
+		"name": "Nutmeg", 
+		"gold": 2,
+		"resourceType": "Luxury",
+	},
+	{
+		"name": "Cloves", 
+		"gold": 2,
+		"resourceType": "Luxury",
+	},
+	{
+		"name": "Pepper", 
+		"gold": 2,
+		"resourceType": "Luxury",
 	}
 ]
