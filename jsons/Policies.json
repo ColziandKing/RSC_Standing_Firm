@@ -17,13 +17,9 @@
 				"column": 4
 			},
 			{
-				"name": "Preservation",
+				"name": "Theocracy",
+				"uniques": ["[+25]% [Gold] from every [Temple]","[+3 Gold] from every [Holy site]"],
 				"requires": ["Aristocracy"],
-				"uniques": [
-					"[+1 Gold] from every [Worker]",
-					"[+1 Gold] from [Fresh water] tiles [in all cities]",
-					"[+1 Gold] from every [Polder]"
-				],
 				"row": 2,
 				"column": 2
 			},
@@ -93,6 +89,13 @@
 				"column": 5
 			},
 			{
+				"name": "Free Religion",
+				"uniques": ["[-10]% Culture cost of adopting new Policies"],
+				"requires": ["Collective Rule"],
+				"row": 3,
+				"column": 1
+			},
+			{
 				"name": "Liberty Complete",
 				"uniques": ["Free Great Person"]
 			}
@@ -131,6 +134,15 @@
 				"column": 4
 			},
 			{
+                		"name": "United Front",
+				"requires": ["Military Tradition"],
+                		"uniques": [
+                    		"Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[-100]% weight to this choice for AI decisions"
+                			],
+                			"row": 3,
+                			"column": 2
+            		},
+			{
 				"name": "Professional Army",
 				"uniques": ["[-33]% Gold cost of upgrading <for [Military] units>","[+50]% Production when constructing [Barracks] buildings [in all cities]"
 				,"[+50]% Production when constructing [Armory] buildings [in all cities]","[+50]% Production when constructing [Military Academy] buildings [in all cities]"
@@ -142,163 +154,6 @@
 			{
 				"name": "Honor Complete",
 				"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]","May buy [Great General] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"]
-			}
-		]
-	},{
-		"name": "Piety",
-		"era": "Ancient era",
-		"uniques": ["Only available <before adopting [Rationalism]>","[+100]% Production when constructing [Shrine] buildings [in all cities]", "[+100]% Production when constructing [Temple] buildings [in all cities]", "Unlocks building the Great Mosque of Djenne"],
-		"policies": [
-			{
-				"name": "Organized Religion",
-				"uniques": ["[+1 Faith] from every [Shrine]","[+1 Faith] from every [Temple]"],
-				"row": 1,
-				"column": 2
-			},
-			{
-				"name": "Mandate Of Heaven",
-				"uniques": ["[Faith] cost of purchasing items in cities [-20]%"],
-				"row": 1,
-				"column": 5
-			},
-			{
-				"name": "Theocracy",
-				"uniques": ["[+25]% [Gold] from every [Temple]","[+3 Gold] from every [Holy site]"],
-				"requires": ["Organized Religion"],
-				"row": 2,
-				"column": 1
-			},
-			{
-				"name": "Reformation",
-				"uniques": ["[+33]% [Culture] [in all cities with a world wonder]", "Empire enters golden age"],
-				"requires": ["Organized Religion"],
-				"row": 2,
-				"column": 3
-			},
-			{
-				"name": "Harmony",
-				"requires": ["Theocracy"],
-				"uniques": [
-					"[+1 Happiness, +1 Food, +1 Faith, +1 Culture, +3 Production] <in cities with at least [7] [Population]>",
-					"[-10]% Unhappiness from [Population] [in all cities]"
-				],
-				"row": 3,
-				"column": 1
-			},
-			{
-				"name": "Free Religion",
-				"uniques": ["[-10]% Culture cost of adopting new Policies"],
-				"requires": ["Mandate Of Heaven", "Reformation"],
-				"row": 3,
-				"column": 4
-			},
-			{
-				"name": "Piety Complete",
-				"uniques": ["Free [Great Prophet] appears", "Free Social Policy", "[+3 Culture] from every [Holy site]"]
-			}
-		]
-	},
-	{
-		"name": "Patronage",
-		"era": "Classical era",
-		"uniques": ["[-25]% City-State Influence degradation", "Unlocks building the Forbidden Palace"],
-		"policies": [
-			{
-				"name": "Philantropy",
-				"uniques":["Gifts of Gold to City-States generate [25]% more Influence"],
-				"row": 1,
-				"column": 2
-			},
-			{
-				"name": "Consulates",
-				"uniques":["Resting point for Influence with City-States is increased by [20]"],
-				"row": 1,
-				"column": 4
-			},
-			{
-				"name": "Scholasticism",
-				"uniques":["Allied City-States provide [Science] equal to [25]% of what they produce for themselves"],
-				"requires": ["Philantropy"],
-				"row": 2,
-				"column": 2
-			},
-			{
-				"name": "Cultural Diplomacy",
-				"uniques": ["[+100]% resources gifted by City-States",
-					"[+50]% Happiness from luxury resources gifted by City-States"],
-				"requires": ["Scholasticism"],
-				"row": 3,
-				"column": 1
-			},
-			{
-				"name": "Educated Elite",
-				"requires": ["Scholasticism","Consulates"],
-				"uniques": ["Allied City-States will occasionally gift Great People"],
-				"row": 3,
-				"column": 3
-			},
-			{
-				"name": "Patronage Complete",
-				"uniques": ["Influence of all other civilizations with all city-states degrades [33]% faster", 
-					"Triggers the following global alert: [Our influence with City-States has started dropping faster!]"]
-			} 
-		]
-	},
-	{
-		"name": "Commerce",
-		"uniques": ["Only available <after adopting [Patronage]>","[+25]% [Gold] [in capital]", "Unlocks building Big Ben"],
-		"era": "Medieval era",
-		"policies": [
-			{
-				"name": "Wagon Trains",
-				"uniques": ["[-50]% maintenance on road & railroads", "[+2 Gold] from each Trade Route"
-				],
-				"row": 1,
-				"column": 2
-			},
-			{
-				"name": "Mercenary Army",
-				"uniques": ["May buy [Landsknecht] units with [Gold] for [5] times their normal Production cost"],
-				"row": 1,
-				"column": 4
-			},
-			{
-				"name": "Entrapreneurship",
-				"uniques": [ "[+100]% Gold from Great Merchant trade missions","[Great Merchant] is earned [25]% faster"],
-				"requires": ["Wagon Trains"],
-				"row": 2,
-				"column": 1
-			},
-			{
-				"name": "Mercantilism",
-				"requires": ["Wagon Trains"],
-				"uniques": ["[Gold] cost of purchasing items in cities [-25]%", "[+1 Science] from every [Mint]", "[+1 Science] from every [Market]",
-					"[+1 Science] from every [Bank]", "[+1 Science] from every [Stock Exchange]"],
-				"row": 2,
-				"column": 3
-			},
-			
-			{
-				"name": "Protectionism",
-				"uniques": ["[+2] Happiness from each type of luxury resource"],
-				"requires": ["Mercenary Army"],
-				"row": 2,
-				"column": 5
-			},
-			{
-            			"name": "Trade Unions",
-				"requires": ["Entrapreneurship","Mercantilism"],
-            			"uniques": [
-                			"[+1 Gold] from every [Trading post]","[+2 Culture] from each Trade Route","[+1 Food] from every [Trading post]"
-            				],
-            			"row": 3,
-            			"column": 3
-        		},
-			{
-				"name": "Commerce Complete",
-				"uniques": ["[+1 Gold] from every [Customs house]",
-					"May buy [Great Merchant] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
-				]
 			}
 		]
 	},
@@ -333,19 +188,6 @@
 				"requires": ["Naval Tradition"],
 				"row": 2,
 				"column": 5
-			},
-			{
-				"name": "Ecodefense",
-				"requires": ["Navigation School"],
-				"uniques": [
-					"[+15]% Strength <for [All] units> <when fighting in [Plains] tiles>",
-					"[+15]% Strength <for [All] units> <when fighting in [Jungle] tiles>",
-					"[+15]% Strength <for [All] units> <when fighting in [Hill] tiles>",
-					"[+15]% Strength <for [All] units> <when fighting in [Forest] tiles>",
-					"[+15]% Strength <for [All] units> <when fighting in [Grassland] tiles>"
-				],
-				"row": 3,
-				"column": 1
 			},
 			{
 				"name": "Treasure Fleets",
@@ -517,6 +359,7 @@
                 		"row": 3,
                 		"column": 3
             		},
+			The Law and Prophets, Christ/Messiah
 			{
 				"name": "Freedom Complete",
 				"uniques": ["[+100]% Yield from every [Great Improvement]", "[+50]% Golden Age length","[-20]% unhappiness from the number of cities"]
@@ -529,14 +372,6 @@
 		"uniques": ["[Gold] cost of purchasing [All] units [-33]%", "Unlocks building the Prora",
 			"Only available <before adopting [Order]>", "Only available <before adopting [Freedom]>"],
 		"policies": [
-			{
-                		"name": "United Front",
-                		"uniques": [
-                    		"Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[-100]% weight to this choice for AI decisions"
-                			],
-                			"row": 1,
-                			"column": 1
-            		},
 			{
 				"name": "Elite Forces",
 				"uniques": ["[+25]% Strength <for [Wounded] units>"],
@@ -592,6 +427,20 @@
 				"row": 3,
 				"column": 5
 			},
+			{
+				"name": "Jihad",
+				"requires": ["Navigation School"],
+				"uniques": [
+					"[+15]% Strength <for [All] units> <when fighting in [Plains] tiles>",
+					"[+15]% Strength <for [All] units> <when fighting in [Jungle] tiles>",
+					"[+15]% Strength <for [All] units> <when fighting in [Hill] tiles>",
+					"[+15]% Strength <for [All] units> <when fighting in [Forest] tiles>",
+					"[+15]% Strength <for [All] units> <when fighting in [Grassland] tiles>"
+				],
+				"row": 3,
+				"column": 1
+			},
+			Sharia
 			{
 				"name": "Autocracy Complete",
 				"uniques": ["[+25]% Strength <when attacking> <for [Military] units> <for [50] turns>","[+20]% unhappiness from the number of cities"]
