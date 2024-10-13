@@ -230,7 +230,7 @@ PolicyIcons/Citizen Militia
   orig: 50, 50
   offset: 0, 0
   index: -1
-PolicyIcons/Conservation
+PolicyIcons/Preservation
   rotate: false
   xy: 436, 638
   size: 50, 50
