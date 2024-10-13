@@ -1,5 +1,4 @@
-The Law and Prophets, Christ/Messiah, Sharia, Nazism
-[
+ [
 	{
 		"name": "Tradition",
 		"era": "Ancient era",
@@ -18,9 +17,13 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"column": 4
 			},
 			{
-				"name": "Theocracy",
-				"uniques": ["[+25]% [Gold] from every [Temple]","[+3 Gold] from every [Holy site]"],
+				"name": "Conservation",
 				"requires": ["Aristocracy"],
+				"uniques": [
+					"[+1 Gold] from every [Worker]",
+					"[+1 Gold] from [Fresh water] tiles [in all cities]",
+					"[+1 Gold] from every [Polder]"
+				],
 				"row": 2,
 				"column": 2
 			},
@@ -90,13 +93,6 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"column": 5
 			},
 			{
-				"name": "Free Religion",
-				"uniques": ["[-10]% Culture cost of adopting new Policies"],
-				"requires": ["Collective Rule"],
-				"row": 3,
-				"column": 1
-			},
-			{
 				"name": "Liberty Complete",
 				"uniques": ["Free Great Person"]
 			}
@@ -135,15 +131,6 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"column": 4
 			},
 			{
-                		"name": "United Front",
-				"requires": ["Military Tradition"],
-                		"uniques": [
-                    		"Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[-100]% weight to this choice for AI decisions"
-                			],
-                			"row": 3,
-                			"column": 2
-            		},
-			{
 				"name": "Professional Army",
 				"uniques": ["[-33]% Gold cost of upgrading <for [Military] units>","[+50]% Production when constructing [Barracks] buildings [in all cities]"
 				,"[+50]% Production when constructing [Armory] buildings [in all cities]","[+50]% Production when constructing [Military Academy] buildings [in all cities]"
@@ -157,62 +144,75 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"uniques": ["Earn [10]% of killed [Military] unit's [Cost] as [Gold]","May buy [Great General] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"]
 			}
 		]
-	},
-	{
-		"name": "Exploration",
-		"uniques": ["Only available <before adopting [Aesthetics]>","[+1] Movement <for [{Military} {Water}] units>","[-25]% City-State Influence degradation", "Unlocks building the Forbidden Palace",
-			"[+1] Sight <for [{Military} {Water}] units>","[+25]% [Gold] [in capital]", "Unlocks building Big Ben","Unlocks building the Louvre"],
-		"era": "Medieval era",
+	},{
+		"name": "Piety",
+		"era": "Ancient era",
+		"uniques": ["Only available <before adopting [Rationalism]>","[+100]% Production when constructing [Shrine] buildings [in all cities]", "[+100]% Production when constructing [Temple] buildings [in all cities]", "Unlocks building the Great Mosque of Djenne"],
 		"policies": [
 			{
-				"name": "Maritime Infrastructure",
-				"uniques": ["[+3 Production] [in all coastal cities]"],
+				"name": "Organized Religion",
+				"uniques": ["[+1 Faith] from every [Shrine]","[+1 Faith] from every [Temple]"],
 				"row": 1,
+				"column": 2
+			},
+			{
+				"name": "Mandate Of Heaven",
+				"uniques": ["[Faith] cost of purchasing items in cities [-20]%"],
+				"row": 1,
+				"column": 5
+			},
+			{
+				"name": "Theocracy",
+				"uniques": ["[+25]% [Gold] from every [Temple]","[+3 Gold] from every [Holy site]"],
+				"requires": ["Organized Religion"],
+				"row": 2,
 				"column": 1
 			},
-						{
-				"name": "Naval Tradition",
-				"uniques": ["[+1 Happiness] from every [Lighthouse]","[+1 Happiness] from every [Harbor]","[+1 Happiness] from every [Seaport]"],
-				"row": 1,
+			{
+				"name": "Reformation",
+				"uniques": ["[+33]% [Culture] [in all cities with a world wonder]", "Empire enters golden age"],
+				"requires": ["Organized Religion"],
+				"row": 2,
 				"column": 3
 			},
+			{
+				"name": "Harmony",
+				"requires": ["Theocracy"],
+				"uniques": [
+					"[+1 Happiness, +1 Food, +1 Faith, +1 Culture, +3 Production] <in cities with at least [7] [Population]>",
+					"[-10]% Unhappiness from [Population] [in all cities]"
+				],
+				"row": 3,
+				"column": 1
+			},
+			{
+				"name": "Free Religion",
+				"uniques": ["[-10]% Culture cost of adopting new Policies"],
+				"requires": ["Mandate Of Heaven", "Reformation"],
+				"row": 3,
+				"column": 4
+			},
+			{
+				"name": "Piety Complete",
+				"uniques": ["Free [Great Prophet] appears", "Free Social Policy", "[+3 Culture] from every [Holy site]"]
+			}
+		]
+	},
+	{
+		"name": "Patronage",
+		"era": "Classical era",
+		"uniques": ["[-25]% City-State Influence degradation", "Unlocks building the Forbidden Palace"],
+		"policies": [
 			{
 				"name": "Philantropy",
 				"uniques":["Gifts of Gold to City-States generate [25]% more Influence"],
 				"row": 1,
-				"column": 5
+				"column": 2
 			},
 			{
 				"name": "Consulates",
 				"uniques":["Resting point for Influence with City-States is increased by [20]"],
 				"row": 1,
-				"column": 7
-			},
-			{
-				"name": "Wagon Trains",
-				"uniques": ["[-50]% maintenance on road & railroads", "[+2 Gold] from each Trade Route"
-				],
-				"row": 1,
-				"column": 9
-			},
-			{
-				"name": "Mercenary Army",
-				"uniques": ["May buy [Landsknecht] units with [Gold] for [5] times their normal Production cost"],
-				"row": 1,
-				"column": 11
-			},
-			{
-				"name": "Merchant Navy",
-				"uniques": ["[+1 Gold] from every [Lighthouse]","[+1 Gold] from every [Harbor]","[+1 Gold] from every [Seaport]","[+4 Production, +4 Culture] from every [East India Company]"],
-				"requires": ["Maritime Infrastructure","Naval Tradition"],
-				"row": 2,
-				"column": 2
-			},
-			{
-				"name": "Navigation School",
-				"uniques": ["[+2 Science] [in all coastal cities]"],
-				"requires": ["Naval Tradition"],
-				"row": 2,
 				"column": 4
 			},
 			{
@@ -220,14 +220,54 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"uniques":["Allied City-States provide [Science] equal to [25]% of what they produce for themselves"],
 				"requires": ["Philantropy"],
 				"row": 2,
-				"column": 6
+				"column": 2
+			},
+			{
+				"name": "Cultural Diplomacy",
+				"uniques": ["[+100]% resources gifted by City-States",
+					"[+50]% Happiness from luxury resources gifted by City-States"],
+				"requires": ["Scholasticism"],
+				"row": 3,
+				"column": 1
+			},
+			{
+				"name": "Educated Elite",
+				"requires": ["Scholasticism","Consulates"],
+				"uniques": ["Allied City-States will occasionally gift Great People"],
+				"row": 3,
+				"column": 3
+			},
+			{
+				"name": "Patronage Complete",
+				"uniques": ["Influence of all other civilizations with all city-states degrades [33]% faster", 
+					"Triggers the following global alert: [Our influence with City-States has started dropping faster!]"]
+			} 
+		]
+	},
+	{
+		"name": "Commerce",
+		"uniques": ["Only available <after adopting [Patronage]>","[+25]% [Gold] [in capital]", "Unlocks building Big Ben"],
+		"era": "Medieval era",
+		"policies": [
+			{
+				"name": "Wagon Trains",
+				"uniques": ["[-50]% maintenance on road & railroads", "[+2 Gold] from each Trade Route"
+				],
+				"row": 1,
+				"column": 2
+			},
+			{
+				"name": "Mercenary Army",
+				"uniques": ["May buy [Landsknecht] units with [Gold] for [5] times their normal Production cost"],
+				"row": 1,
+				"column": 4
 			},
 			{
 				"name": "Entrapreneurship",
 				"uniques": [ "[+100]% Gold from Great Merchant trade missions","[Great Merchant] is earned [25]% faster"],
 				"requires": ["Wagon Trains"],
 				"row": 2,
-				"column": 8
+				"column": 1
 			},
 			{
 				"name": "Mercantilism",
@@ -235,14 +275,77 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"uniques": ["[Gold] cost of purchasing items in cities [-25]%", "[+1 Science] from every [Mint]", "[+1 Science] from every [Market]",
 					"[+1 Science] from every [Bank]", "[+1 Science] from every [Stock Exchange]"],
 				"row": 2,
-				"column": 10
+				"column": 3
 			},
+			
 			{
 				"name": "Protectionism",
 				"uniques": ["[+2] Happiness from each type of luxury resource"],
 				"requires": ["Mercenary Army"],
 				"row": 2,
-				"column": 12
+				"column": 5
+			},
+			{
+            			"name": "Trade Unions",
+				"requires": ["Entrapreneurship","Mercantilism"],
+            			"uniques": [
+                			"[+1 Gold] from every [Trading post]","[+2 Culture] from each Trade Route","[+1 Food] from every [Trading post]"
+            				],
+            			"row": 3,
+            			"column": 3
+        		},
+			{
+				"name": "Commerce Complete",
+				"uniques": ["[+1 Gold] from every [Customs house]",
+					"May buy [Great Merchant] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
+				]
+			}
+		]
+	},
+	{
+		"name": "Exploration",
+		"uniques": ["[+1] Movement <for [{Military} {Water}] units>",
+			"[+1] Sight <for [{Military} {Water}] units>","Unlocks building the Louvre"],
+		"era": "Medieval era",
+		"policies": [
+			{
+				"name": "Maritime Infrastructure",
+				"uniques": ["[+3 Production] [in all coastal cities]"],
+				"row": 1,
+				"column": 2
+			},
+						{
+				"name": "Naval Tradition",
+				"uniques": ["[+1 Happiness] from every [Lighthouse]","[+1 Happiness] from every [Harbor]","[+1 Happiness] from every [Seaport]"],
+				"row": 1,
+				"column": 4
+			},
+			{
+				"name": "Merchant Navy",
+				"uniques": ["[+1 Gold] from every [Lighthouse]","[+1 Gold] from every [Harbor]","[+1 Gold] from every [Seaport]","[+4 Production, +4 Culture] from every [East India Company]"],
+				"requires": ["Maritime Infrastructure","Naval Tradition"],
+				"row": 2,
+				"column": 3
+			},
+			{
+				"name": "Navigation School",
+				"uniques": ["[+2 Science] [in all coastal cities]"],
+				"requires": ["Naval Tradition"],
+				"row": 2,
+				"column": 5
+			},
+			{
+				"name": "Ecodefense",
+				"requires": ["Navigation School"],
+				"uniques": [
+					"[+15]% Strength <for [All] units> <when fighting in [Plains] tiles>",
+					"[+15]% Strength <for [All] units> <when fighting in [Jungle] tiles>",
+					"[+15]% Strength <for [All] units> <when fighting in [Hill] tiles>",
+					"[+15]% Strength <for [All] units> <when fighting in [Forest] tiles>",
+					"[+15]% Strength <for [All] units> <when fighting in [Grassland] tiles>"
+				],
+				"row": 3,
+				"column": 1
 			},
 			{
 				"name": "Treasure Fleets",
@@ -252,42 +355,15 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"column": 3
 			},
 			{
-				"name": "Cultural Diplomacy",
-				"uniques": ["[+100]% resources gifted by City-States",
-					"[+50]% Happiness from luxury resources gifted by City-States"],
-				"requires": ["Scholasticism"],
-				"row": 3,
-				"column": 4
-			},
-			{
-				"name": "Educated Elite",
-				"requires": ["Scholasticism","Consulates"],
-				"uniques": ["Allied City-States will occasionally gift Great People"],
-				"row": 3,
-				"column": 6
-			},
-			{
-            			"name": "Trade Unions",
-				"requires": ["Entrapreneurship","Mercantilism"],
-            			"uniques": [
-                			"[+1 Gold] from every [Trading post]","[+2 Culture] from each Trade Route","[+1 Food] from every [Trading post]"
-            				],
-            			"row": 3,
-            			"column": 8
-        		},
-			{
 				"name": "Exploration Complete",
-				"uniques": ["[+3 Culture] [in all coastal cities]","Influence of all other civilizations with all city-states degrades [33]% faster", 
-					"Triggers the following global alert: [Our influence with City-States has started dropping faster!]","[+1 Gold] from every [Customs house]", "Free Social Policy", 
-					"May buy [Great Merchant] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"]
+				"uniques": ["[+3 Culture] [in all coastal cities]"]
 			}
 		]
 	},
 	{
 		"name": "Aesthetics",
-		"era": "Renaissance era",
-		"uniques": ["Only available <before adopting [Exploration]>","[+100]% Production when constructing [Shrine] buildings [in all cities]", "[+100]% Production when constructing [Temple] buildings [in all cities]", "Unlocks building the Great Mosque of Djenne",
-			"[+10]% [Science] <while the empire is happy>", "Unlocks building the Porcelain Tower","[Great Artist] is earned [33]% faster","Unlocks building the Uffizi"],
+		"era": "Classical era",
+		"uniques": ["[Great Artist] is earned [33]% faster","Unlocks building the Uffizi"],
 		"policies": [
 			{
 				"name": "Cultural Centers",
@@ -304,24 +380,6 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"uniques": ["[50]% of excess happiness converted to [Culture]"],
 				"row": 1,
 				"column": 4
-			},
-			{
-				"name": "Organized Religion",
-				"uniques": ["[+1 Faith] from every [Shrine]","[+1 Faith] from every [Temple]"],
-				"row": 1,
-				"column": 6
-			},
-			{
-				"name": "Mandate Of Heaven",
-				"uniques": ["[Faith] cost of purchasing items in cities [-20]%"],
-				"row": 1,
-				"column": 8
-			},
-			{
-				"name": "Secularism",
-				"uniques": ["[+2 Science] from every specialist [in all cities]"],
-				"row": 1,
-				"column": 10
 			},
 			{
                 		"name": "Populism",
@@ -345,32 +403,6 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"column": 5
 			},
 			{
-				"name": "Reformation",
-				"uniques": ["[+33]% [Culture] [in all cities with a world wonder]", "Empire enters golden age"],
-				"requires": ["Organized Religion"],
-				"row": 2,
-				"column": 7
-			},
-			{
-				"name": "Sovereignty",
-				"uniques": ["[+1 Gold] from all [Science] buildings"],
-				"row": 2,
-				"column": 9
-			},
-			{
-				"name": "Humanism",
-				"uniques": ["[Great Scientist] is earned [25]% faster"],
-				"requires": ["Secularism"],
-				"row": 2,
-				"column": 11
-			},
-			{
-				"name": "Free Thought",
-				"uniques": ["[+1 Science] from every [Trading post]", "[+17]% [Science] from every [University]"],
-				"row": 2,
-				"column": 13
-			},
-			{
 				"name": "Cultural Exchange",
 				"uniques": ["[+20]% [Culture] from every [Museum]","[+20]% [Culture] from every [Opera House]","[+20]% [Culture] from every [Broadcast Tower]"],
 				"requires": ["Flourishing of the Arts"],
@@ -378,20 +410,47 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"column": 3
 			},
 			{
-				"name": "Harmony",
-				"requires": ["Theocracy"],
-				"uniques": [
-					"[+1 Happiness, +1 Food, +1 Faith, +1 Culture, +3 Production] <in cities with at least [7] [Population]>"
-				],
-				"row": 3,
-				"column": 6
+				"name": "Aesthetics Complete",
+				"uniques": ["[+4 Culture] from every [Landmark]","Free Social Policy","May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"]
+			}
+		]
+	},
+	{
+		"name": "Rationalism",
+		"era": "Renaissance era",
+		"uniques": ["Only available <before adopting [Piety]>","[+10]% [Science] <while the empire is happy>", "Unlocks building the Porcelain Tower"],
+		"policies": [
+			{
+				"name": "Secularism",
+				"uniques": ["[+2 Science] from every specialist [in all cities]"],
+				"row": 1,
+				"column": 3
+			},
+				{
+				"name": "Sovereignty",
+				"uniques": ["[+1 Gold] from all [Science] buildings"],
+				"row": 2,
+				"column": 1
+			},
+			{
+				"name": "Humanism",
+				"uniques": ["[Great Scientist] is earned [25]% faster"],
+				"requires": ["Secularism"],
+				"row": 2,
+				"column": 3
+			},
+			{
+				"name": "Free Thought",
+				"uniques": ["[+1 Science] from every [Trading post]", "[+17]% [Science] from every [University]"],
+				"row": 2,
+				"column": 5
 			},
 			{
 				"name": "Scientific Revolution",
 				"uniques": ["Science gained from research agreements [+50]%"],
 				"requires": ["Sovereignty","Humanism"],
 				"row": 3,
-				"column": 9
+				"column": 1
 			},
 			{
 				"name": "Weather Engineering",
@@ -401,13 +460,13 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 					"[+10]% growth [in all cities] <during a Golden Age>"
 				],
 				"row": 3,
-				"column": 12
+				"column": 5
 			},
 			{
-				"name": "Aesthetics Complete",
-				"uniques": ["Free [Great Prophet] appears", "[+3 Culture] from every [Holy site]","[+4 Culture] from every [Landmark]","Free Social Policy","[1] Free Technologies",
-					"May buy [Great Scientist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>",
-					"May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"]
+				"name": "Rationalism Complete",
+				"uniques": ["[1] Free Technologies","[-10]% unhappiness from the number of cities",
+					"May buy [Great Scientist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>"
+				]
 			}
 		]
 	},
@@ -471,6 +530,14 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 			"Only available <before adopting [Order]>", "Only available <before adopting [Freedom]>"],
 		"policies": [
 			{
+                		"name": "United Front",
+                		"uniques": [
+                    		"Militaristic City-States grant units [2] times as fast when you are at war with a common nation","[-100]% weight to this choice for AI decisions"
+                			],
+                			"row": 1,
+                			"column": 1
+            		},
+			{
 				"name": "Elite Forces",
 				"uniques": ["[+25]% Strength <for [Wounded] units>"],
 				"row": 1,
@@ -524,19 +591,6 @@ The Law and Prophets, Christ/Messiah, Sharia, Nazism
 				"requires": ["Fortified Borders","Police State"],
 				"row": 3,
 				"column": 5
-			},
-			{
-				"name": "Jihad",
-				"requires": ["Navigation School"],
-				"uniques": [
-					"[+15]% Strength <for [All] units> <when fighting in [Plains] tiles>",
-					"[+15]% Strength <for [All] units> <when fighting in [Jungle] tiles>",
-					"[+15]% Strength <for [All] units> <when fighting in [Hill] tiles>",
-					"[+15]% Strength <for [All] units> <when fighting in [Forest] tiles>",
-					"[+15]% Strength <for [All] units> <when fighting in [Grassland] tiles>"
-				],
-				"row": 3,
-				"column": 1
 			},
 			{
 				"name": "Autocracy Complete",
