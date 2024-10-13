@@ -1,12 +1,4 @@
 [
-	//Spectator
-    //Not "Excluded from map editor" as it serves as placeholder for "Any Civ" starting locations
-	{
-		"name": "Spectator",
-		"outerColor": [255,255,255]
-//		"innerColor": [255,255,255]
-	},
-
 	{
 		//nations
 		"name": "Babylon",
@@ -1737,16 +1729,4 @@
 		"innerColor": [198,255,192],
 		"cities": ["Jerusalem"]
 	},
-
-
-
-	//Barbarian
-	{
-		"name": "Barbarians",
-		"outerColor": [0,0,0],
-        "innerColor": [185,12,12],
-		"uniques": ["Can only heal by pillaging", "Excluded from map editor",
-			"[Water] units gain the [Unable to pillage tiles] promotion"]
-	}
-
 ]
